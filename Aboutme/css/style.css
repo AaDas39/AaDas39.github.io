@@ -12,7 +12,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'montserrat', sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     line-height: 1.5;
 }
 
@@ -82,17 +82,19 @@ header{
 }
 
 .projects a {
-    color: darkcyan;
+    color: #2F3061;
 }
+
 .projects .btn{
-    background: darkslateblue;
+    background: #2F3061;
     color: #f7fff7;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
     display: inline-block;
 }
-.projects a.hover{
+
+.projects .btn:hover{
     background: rgba(47, 48,97, 80%);
 }
 
