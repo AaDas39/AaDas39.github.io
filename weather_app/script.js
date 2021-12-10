@@ -15,6 +15,7 @@ $(document).ready(function(){
     function weather(lat, long){
         let URL = `https://fcc-weather-api.glitch.me/api/current?lat=${lat}&lon=${long}`;
         $.getJASON(URL, (data) => {
+            console.log(data);
                 updateDOM(data);
             });
     }
