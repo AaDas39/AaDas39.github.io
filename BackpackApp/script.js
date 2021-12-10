@@ -82,11 +82,7 @@ const backpackList = backpackObjectArray.map((backpack) => {
 
   backpackArticle.innerHTML = `
     <figure class="backpack__image">
-<<<<<<< HEAD
       <img src=${backpack.image} alt="image" loading="eager"/>
-=======
-      <img src=${backpack.image} alt="image" loading="eager|lazy"/>
->>>>>>> fb8502b5dc99e94015d48ece34b78c3a6b6eef65
     </figure>
     <h1 class="backpack__name">${backpack.name}</h1>
     <ul class="backpack__features">
