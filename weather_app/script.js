@@ -13,22 +13,22 @@ $(document).ready(function(){
     }
 
     function weather(lat, long){
-        let URL = `https://fcc-weather-api.glitch.me/api/current?lat=${lat}&lon=${long}`;
-        $.getJASON(URL, (data) => {
-            console.log(data);
+        let URL = `https://fcc-weather-api.glitch.me/api/current?lat=47&lon=72`;
+        $.getJSON(URL, function (data) {
                 updateDOM(data);
             });
     }
 
     function updateDOM(data){
         let city = data.name;
-        let temp = match.round(data.main.temp);
+        let temp = Math.round(data.main.temp_max);
         let desc = data.weather[0].description;
         let icon = data.weather[0].icon;
 
         $('#city').html(city);
         $('#temp').html(temp);
         $('#desc').html(desc);
-        $('#icon').alter('src', icon);
+        $('#icon').attr('src', icon);
+        
     }
 });
