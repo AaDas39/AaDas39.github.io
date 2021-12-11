@@ -1,13 +1,6 @@
-/**
- * Solution: Create an event listener
- * - Add event listeners to each of the strap length forms.
- * - Update strap length value with value submitted from form.
- */
+
 import backpackObjectArray from "./components/data.js";
 
-/**
- * Add event listener to the lid-toggle button.
- */
 const lidToggle = function (event, button, newArg) {
   console.log(event);
   console.log(newArg);
